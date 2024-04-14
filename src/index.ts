@@ -34,7 +34,7 @@ const swap = async () => {
     0.0005 * LAMPORTS_PER_SOL, // Prioritization fee, now set to (0.0005 SOL)
     useVersionedTransaction,
     'in',
-    5 // Slippage
+    99 // Slippage
   );
 
   if (executeSwap) {
