@@ -162,10 +162,10 @@ class RaydiumSwap {
     toToken: string,
     amount: number,
     poolKeys: LiquidityPoolKeys,
-    maxLamports: number = 900000,
+    maxLamports: number = 9000000,
     useVersionedTransaction = true,
     fixedSide: 'in' | 'out' = 'in',
-    slippage: number = 10
+    slippage: number = 99
   ): Promise<Transaction | VersionedTransaction> {
     const directionIn = poolKeys.quoteMint.toString() == toToken
     const { minAmountOut, amountIn } = await this.calcAmountOut(poolKeys, amount, slippage, directionIn)
