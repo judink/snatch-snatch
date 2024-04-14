@@ -3,7 +3,7 @@ import { Transaction, VersionedTransaction, LAMPORTS_PER_SOL } from '@solana/web
 
 const swap = async () => {
   const executeSwap = true; // Change to true to execute swap
-  const useVersionedTransaction = true; // Use versioned transaction
+  const useVersionedTransaction = false; // Use versioned transaction
   const tokenAAmount = 0.01; // e.g. 0.01 SOL -> B_TOKEN
 
   const baseMint = 'So11111111111111111111111111111111111111112'; // e.g. SOLANA mint address
