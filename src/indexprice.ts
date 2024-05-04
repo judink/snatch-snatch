@@ -143,7 +143,7 @@ async function getTokenPrice(poolId: string): Promise<number> {
  */
 async function main() {
   try {
-    const tokenAddress = "DVuaDuQdPZ6H49inC2Xoyx7BpLAAJTPPChSfHuGpy8X4"; // test with USDC
+    const tokenAddress = "DVuaDuQdPZ6H49inC2Xoyx7BpLAAJTPPChSfHuGpy8X4"; // CA you want to fetch price
 
     const poolId = await getPoolID(tokenAddress);
 
